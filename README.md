@@ -69,16 +69,16 @@ The original course content was created by [Mark Winterbottom](https://linkedin.
 ### Tech Issues and Problem Solving
 <a id="tech_issues"></a>
 
-<details>
-  <summary><b>Changing the project interpreter in the PyCharm project settings</b></summary>
-
-1. In the **Settings/Preferences dialog** (Ctrl+Alt+S), select **Project <project name> | Project Interpreter**.
-2. Expand the list of the available interpreters and click the **Show All** link.
-3. Select the target interpreter. When PyCharm stops supporting any of the outdated Python versions, the corresponding project interpreter is marked as unsupported.
-4. The Python interpreter name specified in the **Name** field, becomes visible in the list of available interpreters. Click **OK** to apply the changes.
-
-For more info please [check here](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html)
-</details>
+    <details>
+      <summary><b>Changing the project interpreter in the PyCharm project settings</b></summary>
+    
+    1. In the **Settings/Preferences dialog** (Ctrl+Alt+S), select **Project <project name> | Project Interpreter**.
+    2. Expand the list of the available interpreters and click the **Show All** link.
+    3. Select the target interpreter. When PyCharm stops supporting any of the outdated Python versions, the corresponding project interpreter is marked as unsupported.
+    4. The Python interpreter name specified in the **Name** field, becomes visible in the list of available interpreters. Click **OK** to apply the changes.
+    
+    For more info please [check here](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html)
+    </details>
 
 <details>
   <summary><b>PyCharm - Choosing Your Testing Framework</b></summary>
