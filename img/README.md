@@ -1,7 +1,7 @@
 ## Images/Icons
 
 <div align="right"> 
-<img width="7%" height="7%" src="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/blob/master/img/iconfinder_folder_images2_2319.png" hspace="10">
+<img width="10%" height="10%" src="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/blob/master/img/iconfinder_folder_images2_2319.png" hspace="10">
 </div>
 
 A good article is the combination of text, images, and other various multi-media elements like videos, charts, slides, etc.<br/>
