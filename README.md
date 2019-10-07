@@ -17,23 +17,23 @@
 3. <a href="#topics">Tech Topics Covered</a><br/>
 4. <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/img">Icons Library</a><br/>
 
-<a id="about"></a>
 ## Create an advanced REST API with Python, Django REST Framework and Docker using Test Driven Development (TDD). 
+<a id="about"></a>
 
 The advanced course on how to Build a Backend REST API using Python, Django (2.0), Django REST Framework (3.9), Docker, Travis CI, Postgres and Test Driven Development!
 
 The original course content was created by [Mark Winterbottom](https://linkedin.com/in/markwinterbottom/).
 
-<a id="main_objectives"></a>
 ### The main goal is to built a fully functioning REST API that can handle:
+<a id="main_objectives"></a>
 
 - User authentication
 - Creating objects
 - Filtering and sorting objects
 - Uploading and viewing images
 
-<a id="topics"></a>
 ### Additional topics covered:
+<a id="topics"></a>
 
 - Setup a project with Docker and Docker-Compose
 - Configure Travis-CI to automatically run linting and unit tests
