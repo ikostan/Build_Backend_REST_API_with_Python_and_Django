@@ -45,6 +45,7 @@ The original course content was created by [Mark Winterbottom](https://linkedin.
 - Configure a Postgres database
 
 ### Official Web Resources:
+<a id="resources"></a>
 
 - [Python](https://www.python.org/)
 - [Django](https://www.djangoproject.com/)
