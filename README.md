@@ -10,7 +10,7 @@
 <img width="9%" height="9%" src="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/blob/master/img/build-devops-automation-recycle_code-refresh_settings-preferences-512.png" hspace="20">
 </div>
 
-### Table of Contents:<br/>
+### Table of Contents
 
 1. <a href="#about">About</a><br/>
 2. <a href="#main_objectives">Main Objectives</a><br/>
@@ -25,7 +25,7 @@ The advanced course on how to Build a Backend REST API using Python, Django (2.0
 
 The original course content was created by [Mark Winterbottom](https://linkedin.com/in/markwinterbottom/).
 
-### The main goal is to built a fully functioning REST API that can handle:
+### The main goal is to built a fully functioning REST API that can handle
 <a id="main_objectives"></a>
 
 - User authentication
@@ -33,7 +33,7 @@ The original course content was created by [Mark Winterbottom](https://linkedin.
 - Filtering and sorting objects
 - Uploading and viewing images
 
-### Additional topics covered:
+### Additional topics covered
 <a id="topics"></a>
 
 - Setup a project with Docker and Docker-Compose
@@ -44,7 +44,7 @@ The original course content was created by [Mark Winterbottom](https://linkedin.
 - Customize the Django admin
 - Configure a Postgres database
 
-### Official Web Resources:
+### Official Web Resources
 <a id="resources"></a>
 
 - [Python](https://www.python.org/)
