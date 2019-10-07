@@ -15,6 +15,7 @@
 1. <a href="#about">About</a><br/>
 2. <a href="#main_objectives">Main Objectives</a><br/>
 3. <a href="#topics">Tech Topics Covered</a><br/>
+4. <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/img">Icons Library</a><br/>
 
 <a id="about"></a>
 ## Create an advanced REST API with Python, Django REST Framework and Docker using Test Driven Development (TDD). 
