@@ -17,6 +17,8 @@
 3. <a href="#topics">Tech Topics Covered</a><br/>
 4. <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/img">Icons Library</a><br/>
 5. <a href="#resources">Official Web Resources</a><br/>
+6. <a href="#moreresources">Additional Resources</a><br/>
+
 
 ## Create an advanced REST API with Python, Django REST Framework and Docker using Test Driven Development (TDD). 
 <a id="about"></a>
@@ -53,3 +55,11 @@ The original course content was created by [Mark Winterbottom](https://linkedin.
 - [Docker](https://www.docker.com)
 - [Travis-CI](https://travis-ci.org/)
 - [PostgreSQL](https://www.postgresql.org)
+- [GitHub](https://github.com/)
+
+### Additional Resources:
+<a id="moreresources"></a>
+
+- [GitHub Desktop](https://desktop.github.com/)
+- [PyCharm](https://www.jetbrains.com/pycharm/)
+- [Oracle VM](https://www.oracle.com/technetwork/server-storage/virtualbox/overview/index.html)
