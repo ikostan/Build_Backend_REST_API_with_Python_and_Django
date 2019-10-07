@@ -10,6 +10,8 @@
 <img width="9%" height="9%" src="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/blob/master/img/build-devops-automation-recycle_code-refresh_settings-preferences-512.png" hspace="20">
 </div>
 
+## Create an advanced REST API with Python, Django REST Framework and Docker using Test Driven Development (TDD). 
+
 ### Table of Contents
 
 1. <a href="#about">About</a><br/>
@@ -19,8 +21,7 @@
 5. <a href="#resources">Official Web Resources</a><br/>
 6. <a href="#moreresources">Additional Resources</a><br/>
 
-
-## Create an advanced REST API with Python, Django REST Framework and Docker using Test Driven Development (TDD). 
+### About
 <a id="about"></a>
 
 The advanced course on how to Build a Backend REST API using Python, Django (2.0), Django REST Framework (3.9), Docker, Travis CI, Postgres and Test Driven Development!
