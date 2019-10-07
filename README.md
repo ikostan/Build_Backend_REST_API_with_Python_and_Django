@@ -14,6 +14,8 @@
 
 The advanced course on how to Build a Backend REST API using Python, Django (2.0), Django REST Framework (3.9), Docker, Travis CI, Postgres and Test Driven Development!
 
+The original course content was created by [Mark Winterbottom](https://linkedin.com/in/markwinterbottom/).
+
 ### The main goal is to built a fully functioning REST API that can handle:
 
 - User authentication
