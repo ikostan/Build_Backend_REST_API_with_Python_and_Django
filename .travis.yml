@@ -7,9 +7,6 @@ services:
 
 before_script:
   - pip install docker-compose
-  - pip install pytest
-  - pip install pytest-cov #This plugin produces coverage reports
-  - pip install codecov #install codecov
 
 script:
   # - docker-compose run app sh -c "python manage.py test && flake8"
