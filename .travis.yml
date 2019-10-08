@@ -2,10 +2,16 @@ language: python
 python:
   - "3.6"
 
+install:
+    - "pip install pytest"
+    - "pip install pytest-cov" #This plugin produces coverage reports
+    - "pip install codecov" #install codecov
+
 services:
   - docker
 
 before_script: pip install docker-compose
 
 script:
-  - docker-compose run app sh -c "python manage.py test && flake8"
+  # - docker-compose run app sh -c "python manage.py test && flake8"
+  - docker-compose run app sh -c "pytest --cov-config=.coveragerc --cov-report term-missing --cov && flake8"  # check test coverage with pytest-cov
