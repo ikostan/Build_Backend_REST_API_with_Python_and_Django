@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ikostan/Build_Backend_REST_API_with_Python_and_Django.svg?branch=master)](https://travis-ci.org/ikostan/Build_Backend_REST_API_with_Python_and_Django)
+
 # [Build Backend EST API with Python & Django](https://www.udemy.com/course/django-python-advanced)
 
 <div align="center"> 
