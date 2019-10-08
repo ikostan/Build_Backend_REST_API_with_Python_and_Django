@@ -6,3 +6,13 @@ def add(x, y):
     :return:
     """
     return x + y
+
+
+def subtract(x, y):
+    """
+    Subtract two numbers and return the result
+    :param x:
+    :param y:
+    :return:
+    """
+    return x - y
