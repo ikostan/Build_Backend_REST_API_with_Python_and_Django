@@ -9,8 +9,7 @@ before_script:
   - pip install docker-compose
 
 script:
-  # - docker-compose run app sh -c "python manage.py test && flake8"
-  - docker-compose run app sh -c "pytest --cov-config=.coveragerc --cov-report term-missing --cov && flake8"  # check test coverage with pytest-cov
+  - docker-compose run app sh -c "python manage.py test && flake8"
 
 after_success:
   # Generates coverage report, public repo using Travis:
