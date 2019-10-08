@@ -10,6 +10,6 @@ RUN mkdir /app
 WORKDIR /app
 COPY ./app /app
 
-# RUN adduser -D user
-RUN adduser -S -D user
+RUN adduser -D user
+RUN chown -R user:user /app && chmod -R 755 /app
 USER user
