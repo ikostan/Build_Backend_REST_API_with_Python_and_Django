@@ -64,7 +64,6 @@ The original course content was created by [Mark Winterbottom](https://linkedin.
 
 - [GitHub Desktop](https://desktop.github.com/)
 - [PyCharm](https://www.jetbrains.com/pycharm/)
-- [Oracle VM](https://www.oracle.com/technetwork/server-storage/virtualbox/overview/index.html)
 
 ### Tech Issues and Problem Solving
 <a id="tech_issues"></a>
