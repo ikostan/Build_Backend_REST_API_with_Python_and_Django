@@ -11,5 +11,5 @@ WORKDIR /app
 COPY ./app /app
 
 # RUN adduser -D user
-RUN addgroup --system user && adduser --system --group user
+RUN addgroup -S user && adduser -S -G user
 USER user
