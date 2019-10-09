@@ -11,9 +11,10 @@ before_install:
 
 before_script:
   - pip install docker-compose
+  - pip install codecov 
 
 script:
-  - docker-compose run -u root app sh -c "pip install codecov && python manage.py test && flake8"
+  - docker-compose run -u root app sh -c "python manage.py test && flake8"
 
 # Push the results back to codecov
 after_success:
