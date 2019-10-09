@@ -2,14 +2,24 @@ language: python
 python:
   - "3.6"
 
+env:
+  - TRAVIS_CI=True
+
 services:
   - docker
+  - postgresql
+
+cache:
+  directories:
+    - $HOME/.cache/pip
 
 before_install:
   - docker version
   - docker-compose version
 
 before_script:
+  - psql -c "CREATE DATABASE test_db_app;" -U postgres
+  - psql -c "CREATE USER db_user WITH PASSWORD 'db_pass';" -U postgres
   - pip install docker-compose
   - docker-compose run --user='root' app chmod -R 777 .
 
