@@ -14,7 +14,7 @@ before_script:
   - pip install codecov
 
 script:
-  - docker-compose run -u root app sh -c "pip install codecov && python manage.py test && flake8 && codecov"
+  - docker-compose run --rm $(bash <(curl -s https://codecov.io/env)) -u root app sh -c "pip install codecov && python manage.py test && flake8 && codecov"
 
 # Push the results back to codecov
 after_success:
