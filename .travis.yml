@@ -2,15 +2,8 @@ language: python
 python:
   - "3.6"
 
-env:
-  - TRAVIS_CI=True
-
 services:
   - docker
-
-cache:
-  directories:
-    - $HOME/.cache/pip
 
 before_install:
   - docker version
@@ -22,4 +15,4 @@ before_script:
 
 script:
   # - docker-compose run app sh -c "python manage.py test && flake8"
-  - docker-compose run --rm $(bash <(curl -s https://codecov.io/env)) app ash -c "coverage run manage.py test && codecov"
+  - docker-compose run --rm app ash -c "coverage run manage.py test && codecov"
