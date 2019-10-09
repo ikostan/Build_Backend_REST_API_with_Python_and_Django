@@ -15,4 +15,4 @@ before_script:
 
 script:
   # - docker-compose run app sh -c "python manage.py test && flake8"
-  - docker-compose run --rm $(bash <(curl -s https://codecov.io/env)) app ash -c "coverage run manage.py test && codecov"
+  - docker-compose run --rm $(bash <(curl -s https://codecov.io/env)) app ash -c "coverage run manage.py test && apk update && apk add git && codecov"
