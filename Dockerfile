@@ -6,9 +6,7 @@ ENV PYTHONUNBUFFERED 1
 COPY ./requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y git
+RUN sudo apt-get update && apt-get install git -y
 
 RUN mkdir /app
 WORKDIR /app
