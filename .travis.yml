@@ -11,8 +11,6 @@ before_install:
 
 before_script:
   - pip install docker-compose
-  - docker-compose run --user='root' app chmod -R 777 .
 
 script:
-  # - docker-compose run app sh -c "python manage.py test && flake8"
-  - docker-compose run --rm app ash -c "pytest --cov=./ && apk update && apk add git && codecov"
+  - docker-compose run app sh -c "python manage.py test && flake8"

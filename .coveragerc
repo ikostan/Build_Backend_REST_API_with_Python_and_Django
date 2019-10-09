@@ -1,9 +1,0 @@
-[run]
-source = /home/travis/build/ikosstan/Build_Backend_REST_API_with_Python_and_Django/app
-parallel = True
-data_file = /home/travis/build/Build_Backend_REST_API_with_Python_and_Django/app/.coverage
-
-[paths]
-source =
-  /home/travis/build/ikostan/Build_Backend_REST_API_with_Python_and_Django
-  /app/
