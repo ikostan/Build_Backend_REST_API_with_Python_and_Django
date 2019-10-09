@@ -13,6 +13,9 @@ script:
   # - docker-compose run app sh -c "python manage.py test && flake8"
   - docker-compose run app sh -c "COVERAGE_FILE=.coveragerc coverage run --source=. manage.py test"
 
+after_script:
+  - coverage xml
+
 after_success:
   # Generates coverage report, public repo using Travis:
   # Source: https://dev.to/j0nimost/using-codecov-with-travis-ci-pytest-cov-1dfj
