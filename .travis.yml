@@ -11,6 +11,7 @@ before_install:
 
 before_script:
   - pip install docker-compose
+  - pip install coveralls
   - docker-compose run --user='root' app chmod -R 777 .
 
 script:
