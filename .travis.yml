@@ -15,4 +15,5 @@ before_script:
 
 script:
   # - docker-compose run app sh -c "python manage.py test && flake8"
-  - docker-compose run --rm $(bash <(curl -s https://codecov.io/env)) app ash -c "python manage.py test --cov-config=.coveragerc --cov-report term-missing --cov && codecov"
+  - docker-compose run app sh -c "coverage run --source=app manage.py test && coverals"
+  # - docker-compose run --rm $(bash <(curl -s https://codecov.io/env)) app ash -c "python manage.py test"
