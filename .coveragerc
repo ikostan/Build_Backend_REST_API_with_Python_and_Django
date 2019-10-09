@@ -1,0 +1,3 @@
+[run]
+# omit anything in a virtualenv directory anywhere
+omit = /home/travis/virtualenv/*
