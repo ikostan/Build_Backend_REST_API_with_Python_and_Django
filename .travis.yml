@@ -13,4 +13,5 @@ before_script:
   - pip install docker-compose
 
 script:
-  - docker-compose run --rm $(bash <(curl -s https://codecov.io/env)) -u root app sh -c "python manage.py test && flake8"
+  # - docker-compose run --rm $(bash <(curl -s https://codecov.io/env)) -u root app sh -c "python manage.py test && flake8"
+ - docker-compose run --rm -u user app sh -c "python manage.py test && flake8"
