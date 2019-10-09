@@ -6,7 +6,9 @@ ENV PYTHONUNBUFFERED 1
 COPY ./requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
-RUN apk add --no-cache git
+RUN apk update && \
+    apk upgrade && \
+    apk add git
 
 RUN mkdir /app
 WORKDIR /app
