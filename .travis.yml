@@ -12,13 +12,11 @@ before_install:
 before_script:
   - pip install docker-compose
   - docker-compose run --user='root' app chmod -R 777 .
+  - bash <(curl -s https://codecov.io/env)
 
 script:
   # - docker-compose run app sh -c "python manage.py test && flake8"
   - docker-compose run app sh -c "coverage run --source=. manage.py test"
-
-after_script:
-  - coverage xml
 
 after_success:
   # Generates coverage report, public repo using Travis:
