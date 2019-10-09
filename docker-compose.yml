@@ -1,16 +1,6 @@
 version: "3"
 
 services:
-  db:
-    environment:
-      POSTGRES_DB: db_app
-      POSTGRES_USER: db_user
-      POSTGRES_PASSWORD: db_pass
-    restart: always
-    image: postgres:9.6-alpine
-    ports:
-      - "5432:5432"
-
   app:
     build:
       context: .
@@ -19,4 +9,6 @@ services:
     volumes:
       - ./app:/app
     command: >
-      sh -c "python manage.py runserver 0.0.0.0:8000"
+      sh -c "python manage.py wait_for_db &&
+             python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
