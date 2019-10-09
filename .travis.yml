@@ -17,7 +17,7 @@ script:
   # - docker-compose run app sh -c "python manage.py test && flake8"
   - ci_env="bash <(curl -s https://codecov.io/env)"
   - ci_post_cov="bash <(curl -s https://codecov.io/bash)"
-  - docker-compose run app sh -c "$ci_env && coverage run --source=. manage.py test && $ci_post_cov"
+  - docker-compose run app /bin/bash -c "$ci_env && coverage run --source=. manage.py test && $ci_post_cov"
 
 after_script:
   - coverage xml
