@@ -134,5 +134,4 @@ NOSE_ARGS = [
     '--with-coverage',
     '--cover-erase',
     '--cover-package=core',
-    '--cover-html'
 ]
