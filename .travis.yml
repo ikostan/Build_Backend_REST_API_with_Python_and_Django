@@ -7,7 +7,6 @@ env:
 
 services:
   - docker
-  - postgresql
 
 cache:
   directories:
@@ -18,11 +17,9 @@ before_install:
   - docker-compose version
 
 before_script:
-  - psql -c "CREATE DATABASE test_db_app;" -U postgres
-  - psql -c "CREATE USER db_user WITH PASSWORD 'db_pass';" -U postgres
   - pip install docker-compose
   - docker-compose run --user='root' app chmod -R 777 .
 
 script:
   # - docker-compose run app sh -c "python manage.py test && flake8"
-  - docker-compose run --rm $(bash <(curl -s https://codecov.io/env)) app ash -c "pytest --cov=./ && apk update && apk add git && codecov"
+  - docker-compose run --rm $(bash <(curl -s https://codecov.io/env)) app ash -c "coverage run --source=. manage.py test && apk update && apk add git && codecov"
