@@ -2,3 +2,31 @@ fixes:
   - "before/::after/"  # move path   e.g., "before/path" => "after/path"
   - "::after/"         # move root   e.g., "path/" => "after/path/"
   - "before/::"        # reduce root e.g., "before/path/" => "path/"
+
+codecov:
+  max_report_age: off
+  notify:
+    require_ci_to_pass: no
+
+coverage:
+  precision: 2
+  round: down
+  range: "70...100"
+
+  status:
+    project: yes
+    patch: yes
+    changes: no
+
+parsers:
+  gcov:
+    branch_detection:
+      conditional: yes
+      loop: yes
+      method: no
+      macro: no
+
+comment:
+  layout: "reach,diff,flags,tree"
+  behavior: default
+  require_changes: no
