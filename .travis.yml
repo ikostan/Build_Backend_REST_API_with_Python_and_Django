@@ -7,6 +7,7 @@ services:
 
 before_script:
   - pip install docker-compose
+  - pip install codecov
   - docker-compose run --user='root' app chmod -R 777 .
 
 script:
