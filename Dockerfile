@@ -8,7 +8,8 @@ RUN pip install -r /requirements.txt
 
 RUN apk update && \
     apk upgrade && \
-    apk add git
+    apk add git && \
+    apk add mercurial
 
 RUN mkdir /app
 WORKDIR /app
