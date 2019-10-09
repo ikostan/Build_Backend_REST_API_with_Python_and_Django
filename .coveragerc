@@ -2,6 +2,3 @@
 omit =
     *migrations*
     *venv*
-
-[html]
-directory = coverage_html
