@@ -16,8 +16,3 @@ before_script:
 script:
   # - docker-compose run app sh -c "python manage.py test && flake8"
   - docker-compose run --rm $(bash <(curl -s https://codecov.io/env)) app ash -c "coverage run --source=. manage.py test && codecov"
-
-after_success:
-  # Generates coverage report, public repo using Travis:
-  # Source: https://dev.to/j0nimost/using-codecov-with-travis-ci-pytest-cov-1dfj
-  # - codecov
