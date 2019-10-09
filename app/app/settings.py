@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'django_nose',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,17 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'core.user'
+
+# Django Testing Docs
+# https://django-testing-docs.readthedocs.io/en
+
+# Use nose to run all tests
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+# Tell nose to measure coverage on the 'foo' and 'bar' apps
+NOSE_ARGS = [
+    '--with-coverage',
+    '--cover-erase',
+    '--cover-package=core',
+    '--cover-html'
+]
