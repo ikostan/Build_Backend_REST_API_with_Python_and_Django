@@ -3,3 +3,4 @@ djangorestframework>=3.9.0,<3.10.0
 flake8>=3.6.0,<3.7.0
 psycopg2>=2.7.5,<2.8.0
 coverage>=4.5.0,<4.6.0
+codecov>=2.0.0,<2.1.0
