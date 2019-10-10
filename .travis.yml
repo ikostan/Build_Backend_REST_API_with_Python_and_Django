@@ -17,4 +17,4 @@ script:
   # - docker-compose run app sh -c "python manage.py test && flake8"
   # Using ROOT user in order to avoid 'PermissionError: [Errno 13] Permission denied: '/app/.coverage' error:
   # - docker-compose run -u root app sh -c "coverage run --source='.' manage.py test && coverage report && flake8"
-  - docker-compose run -u root app sh -c "coverage run --source='.' manage.py test && coverage report && flake8 && codecov"
+  - docker-compose run -u root app sh -c "coverage run --source='.' manage.py test && coverage report && flake8 && codecov --commit=:sha"
