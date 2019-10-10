@@ -10,10 +10,10 @@ RUN apk add --update --no-cache --virtual .tmp-build-deps \
 RUN pip install -r /requirements.txt
 RUN apk del .tmp-build-deps
 
-RUN apk update && \
-    apk upgrade && \
-    apk add --no-cache git && \
-    apk add --no-cache mercurial
+# RUN apk update && \
+#    apk upgrade && \
+#    apk add --no-cache git && \
+#    apk add --no-cache mercurial
 
 RUN mkdir /app
 WORKDIR /app
