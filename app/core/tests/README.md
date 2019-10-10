@@ -1,3 +1,9 @@
+# Testing Dgango
+
+Testing is vital. Without properly testing your code, you will never know if the code works as it should, now or in the future when the codebase changes. Countless hours can be lost fixing problems caused by changes to the codebase. What’s worse, you may not even know that there are problems at all until your end users complain about it, which is obviously not how you want to find out about code breaks.
+
+Source: [Testing in Django (Part 1) – Best Practices and Examples](https://realpython.com/testing-in-django-part-1-best-practices-and-examples/)
+
 ## Unit tests
 
 Django comes with a test suite of its own, in the tests directory of the code base. It’s our policy to make sure all tests pass at all times.
@@ -5,6 +11,24 @@ Django comes with a test suite of its own, in the tests directory of the code ba
 We appreciate any and all contributions to the test suite!
 
 The Django tests all use the testing infrastructure that ships with Django for testing applications. See Writing and running tests for an explanation of how to write new tests.
+
+Source: [Django Documentation](https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/)
+
+## Structure
+
+Structure your tests to fit your Project. I tend to favor putting all tests for each app in the tests.py file and grouping tests by what I’m testing - e.g., models, views, forms, etc.
+
+You can also bypass (delete) the tests.py file altogether and structure your tests in this manner within each app:
+
+```
+└── app_name
+    └── tests
+        ├── __init__.py
+        ├── test_forms.py
+        ├── test_models.py
+        └── test_views.py
+```
+Source: [Testing in Django (Part 1) – Best Practices and Examples](https://realpython.com/testing-in-django-part-1-best-practices-and-examples/)
 
 ## Code coverage
 
