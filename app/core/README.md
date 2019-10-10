@@ -6,3 +6,4 @@ Handles following activities:
 - Admin user registration 
 - Non admin user registration 
 - Pause commands execution until database is available
+- User authentication
