@@ -23,7 +23,8 @@
 5. <a href="#resources">Official Web Resources</a><br/>
 6. <a href="#moreresources">Additional Resources</a><br/>
 7. <a href="#tech_issues">Tech Issues and Problem Solving</a><br/>
-8. <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/app/app">Django App Configuration Files</a><br/>
+8. <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/app">Django App:</a><br/>
+   - <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/app/app">Django App Configuration Files</a><br/>
 
 ### About
 <a id="about"></a>
