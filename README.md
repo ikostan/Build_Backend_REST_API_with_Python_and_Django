@@ -19,13 +19,21 @@
 ### Table of Contents
 
 1. <a href="#about">About</a>
+
 2. <a href="#main_objectives">Main Objectives</a>
+
 3. <a href="#topics">Tech Topics Covered</a>
+
 4. <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/img">Icons Library</a>
+
 5. <a href="#resources">Official Web Resources</a>
+
 6. <a href="#moreresources">Additional Resources</a>
+
 7. <a href="#tech_issues">Tech Issues and Problem Solving</a>
+
 8. <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/app">Django App:</a>
+
    - <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/app/app">Django App Configuration Files</a>
    - <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/app/core">Core app</a>
 
