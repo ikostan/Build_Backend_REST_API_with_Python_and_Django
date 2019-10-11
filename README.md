@@ -1,5 +1,6 @@
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 [![Build Status](https://travis-ci.org/ikostan/Build_Backend_REST_API_with_Python_and_Django.svg?branch=master)](https://travis-ci.org/ikostan/Build_Backend_REST_API_with_Python_and_Django)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c8581d51c457467a9e5d106e5acebd94)](https://www.codacy.com/manual/ikostan/Build_Backend_REST_API_with_Python_and_Django?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ikostan/Build_Backend_REST_API_with_Python_and_Django&amp;utm_campaign=Badge_Grade)
 
 # [Build Backend EST API with Python & Django](https://www.udemy.com/course/django-python-advanced)
 
