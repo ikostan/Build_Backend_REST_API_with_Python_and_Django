@@ -13,20 +13,20 @@
 <img width="9%" height="9%" src="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/blob/master/img/build-devops-automation-recycle_code-refresh_settings-preferences-512.png" hspace="20">
 </div>
 
-## Create an advanced REST API with Python, Django REST Framework and Docker using Test Driven Development (TDD). 
+## Create an advanced REST API with Python, Django REST Framework and Docker using Test Driven Development (TDD)
 
 ### Table of Contents
 
-1. <a href="#about">About</a><br/>
-2. <a href="#main_objectives">Main Objectives</a><br/>
-3. <a href="#topics">Tech Topics Covered</a><br/>
-4. <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/img">Icons Library</a><br/>
-5. <a href="#resources">Official Web Resources</a><br/>
-6. <a href="#moreresources">Additional Resources</a><br/>
-7. <a href="#tech_issues">Tech Issues and Problem Solving</a><br/>
-8. <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/app">Django App:</a><br/>
-   - <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/app/app">Django App Configuration Files</a><br/>
-   - <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/app/core">Core app</a><br/>
+1. <a href="#about">About</a>
+2. <a href="#main_objectives">Main Objectives</a>
+3. <a href="#topics">Tech Topics Covered</a>
+4. <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/img">Icons Library</a>
+5. <a href="#resources">Official Web Resources</a>
+6. <a href="#moreresources">Additional Resources</a>
+7. <a href="#tech_issues">Tech Issues and Problem Solving</a>
+8. <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/app">Django App:</a>
+   - <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/app/app">Django App Configuration Files</a>
+   - <a href="https://github.com/ikostan/Build_Backend_REST_API_with_Python_and_Django/tree/master/app/core">Core app</a>
 
 ### About
 <a id="about"></a>
