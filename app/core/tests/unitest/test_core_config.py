@@ -3,10 +3,10 @@ from django.test import TestCase
 from core.apps import CoreConfig
 
 
-class AppsConfigTest(TestCase):
+class CoreConfigTest(TestCase):
     """
     Testing apps.py in django
-    Test to cover apps.py files for each model
+    Test to cover apps.py files for core model
 
     Source:
     https://stackoverflow.com/questions/

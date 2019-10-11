@@ -1,4 +1,4 @@
-# Core app
+## Core app
 
 Handles following activities:
 
