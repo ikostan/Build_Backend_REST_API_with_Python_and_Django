@@ -11,7 +11,8 @@ class UserSerializer(serializers.ModelSerializer):
         extra_kwargs = {'password': {'write_only': True,
                                      'min_length': 6}}
 
-    def create(self, validated_data):
+    @staticmethod
+    def create(validated_data):
         """
         Create a new user with encrypted
         password and return it
