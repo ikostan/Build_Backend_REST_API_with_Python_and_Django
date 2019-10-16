@@ -20,7 +20,7 @@ Structure your tests to fit your Project. I tend to favor putting all tests for 
 
 You can also bypass (delete) the tests.py file altogether and structure your tests in this manner within each app:
 
-```
+```bash
 └── app_name
     └── tests
         ├── __init__.py
