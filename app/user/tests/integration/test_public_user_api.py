@@ -12,7 +12,6 @@ class PublicUserApiTest(TestCase):
 
     @classmethod
     def setUpClass(cls):
-
         # Fix for error:
         # AttributeError: type object 'PublicUserApiTest'
         # has no attribute 'cls_atomics'
@@ -29,8 +28,10 @@ class PublicUserApiTest(TestCase):
         # off to views, but you cannot reverse such patterns.
         cls.CREATE_USER_URL = reverse('user:create')
 
-    def setUp(self) -> None:
+        # URL TOKEN
+        cls.TOKEN_URL = reverse('user:token')
 
+    def setUp(self) -> None:
         self.client = APIClient()
 
     @staticmethod
@@ -114,3 +115,92 @@ class PublicUserApiTest(TestCase):
             email=payload['email']
         ).exists()
         self.assertFalse(user_exists)
+
+    def test_create_token_for_user(self):
+        """
+        Test created token for the user
+        :return:
+        """
+        # user data
+        payload = {
+            'email': 'test@test.com',
+            'password': 'testpassword',
+        }
+        # create user
+        self.create_user(**payload)
+        # send login request
+        res = self.client.post(self.TOKEN_URL, payload)
+        # assert response code
+        self.assertEqual(res.status_code,
+                         status.HTTP_200_OK)
+        # verify auth token
+        self.assertIn('token', res.data)
+        # verify that no password in response
+        self.assertNotIn('password', res.data)
+
+    def test_create_token_invalid_credentials(self):
+        """
+        Test that token is not created if invalid
+        credentials are given
+        :return:
+        """
+
+        self.create_user(email="test@test.com",
+                         password="testpassword")
+        payload = {'email': "test@test.com",
+                   'password': "wrongpassword"}
+
+        # send auth request
+        res = self.client.post(self.TOKEN_URL,
+                               payload)
+        # verify response code
+        self.assertEqual(res.status_code,
+                         status.HTTP_400_BAD_REQUEST)
+        # verify that token not in the response
+        self.assertNotIn('token', res.data)
+        # verify that no password in response
+        self.assertNotIn('password', res.data)
+
+    def test_create_token_user_does_not_exist(self):
+        """
+        Test that token is not created if
+        user does not exist
+        :return:
+        """
+
+        payload = {'email': "test@test.com",
+                   'password': "wrongpassword"}
+
+        # send auth request
+        res = self.client.post(self.TOKEN_URL,
+                               payload)
+        # verify response code
+        self.assertEqual(res.status_code,
+                         status.HTTP_400_BAD_REQUEST)
+        # verify that token not in the response
+        self.assertNotIn('token', res.data)
+        # verify that no password in response
+        self.assertNotIn('password', res.data)
+
+    def test_create_token_no_password(self):
+        """
+        Test that token is not created if invalid
+        no password (empty password string) given
+        :return:
+        """
+
+        self.create_user(email="test@test.com",
+                         password="testpassword")
+        payload = {'email': "test@test.com",
+                   'password': ""}
+
+        # send auth request
+        res = self.client.post(self.TOKEN_URL,
+                               payload)
+        # verify response code
+        self.assertEqual(res.status_code,
+                         status.HTTP_400_BAD_REQUEST)
+        # verify that token not in the response
+        self.assertNotIn('token', res.data)
+        # verify that no password in response
+        self.assertNotIn('password', res.data)
