@@ -13,11 +13,17 @@ class PublicUserApiTest(TestCase):
     @classmethod
     def setUpClass(cls):
 
+        # Fix for error:
+        # AttributeError: type object 'PublicUserApiTest'
+        # has no attribute 'cls_atomics'
+        # Source: https://github.com/Microsoft/PTVS/issues/41
+        super(PublicUserApiTest, cls).setUpClass()
+
         # The reverse() function can reverse a large
         # variety of regular expression patterns for URLs,
         # but not every possible one. The main restriction
         # at the moment is that the pattern cannot contain
-        # alternative choices using the vertical bar ("|") 
+        # alternative choices using the vertical bar ("|")
         # character. You can quite happily use such patterns
         # for matching against incoming URLs and sending them
         # off to views, but you cannot reverse such patterns.
