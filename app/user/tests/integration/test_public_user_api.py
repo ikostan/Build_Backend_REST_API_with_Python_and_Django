@@ -202,5 +202,3 @@ class PublicUserApiTest(TestCase):
                          status.HTTP_400_BAD_REQUEST)
         # verify that token not in the response
         self.assertNotIn('token', res.data)
-        # verify that no password in response
-        self.assertNotIn('password', res.data)
