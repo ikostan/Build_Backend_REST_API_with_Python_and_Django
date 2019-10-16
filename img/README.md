@@ -10,7 +10,5 @@ Visuals give us a better understanding of not just the message, but what’s beh
 Sources:
 
 - [Iconfinder](https://www.iconfinder.com)
-
 - [5 Powerful Reasons To Add Images To Your Blog Posts](https://www.shoutmeloud.com/4-ways-how-images-enhance-your-blog.html)
-
 - [7 Reasons Why Content Needs Amazing Images, Videos & Visuals](https://www.searchenginejournal.com/why-content-needs-amazing-images-videos-visuals/268911/#close)
