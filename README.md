@@ -257,14 +257,14 @@ deactivate
   
 1. Older versions of Docker were called `docker`, `docker.io`, or `docker-engine`. If these are installed, uninstall them:
   ```bash
-  $ sudo apt-get remove docker docker-engine docker.io containerd runc
+  sudo apt-get remove docker docker-engine docker.io containerd runc
   ```
 
 2. Update the `apt` package index and install packages to allow `apt` to use a repository over HTTPS:
   ```bash
-  $ sudo apt-get update
+  sudo apt-get update
 
-  $ sudo apt-get install \
+  sudo apt-get install \
         apt-transport-https \
         ca-certificates \
         curl \
@@ -274,29 +274,29 @@ deactivate
 
 3. Add Docker’s official GPG key:
   ```bash
-  $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
   # Verify that you now have the key with the fingerprint
-  $ sudo apt-key fingerprint 0EBFCD88
+  sudo apt-key fingerprint 0EBFCD88
   ```
 
 4. Use the following command to set up the `stable` repository:
   ```bash
-  $ sudo add-apt-repository \
+  sudo add-apt-repository \
   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) \
+  (lsb_release -cs) \
   stable"
   ```
 
 5. Update the `apt` package index, and install the latest version of Docker Engine and container:
   ```bash
-  $ sudo apt-get update
-  $ sudo apt-get install docker-ce docker-ce-cli containerd.io
+  sudo apt-get update
+  sudo apt-get install docker-ce docker-ce-cli containerd.io
   ```
 
 6. Verify that Docker Engine is installed correctly by running the `hello-world` image:
   ```bash
-  $ sudo docker run hello-world
+  sudo docker run hello-world
   ```
   This command downloads a test image and runs it in a container. When the container runs, it prints an informational message and exits.
   
@@ -321,7 +321,7 @@ deactivate
 
  3. Test the installation:
   ```bash
-  $ docker-compose --version
+  docker-compose --version
   ```
   
 [Source](https://docs.docker.com/compose/install/)
@@ -393,7 +393,6 @@ extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
 7. Update template as following:
 ```python
 html_theme = 'sphinx_rtd_theme'
-
 ```
 8. Update sys.path.insert as following:
 ```python
