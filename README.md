@@ -255,12 +255,12 @@ deactivate
 <details>
   <summary><b>Install Docker Engine on Ubuntu</b></summary>
   
-  1. Older versions of Docker were called `docker`, `docker.io`, or `docker-engine`. If these are installed, uninstall them:
+1. Older versions of Docker were called `docker`, `docker.io`, or `docker-engine`. If these are installed, uninstall them:
   ```bash
   $ sudo apt-get remove docker docker-engine docker.io containerd runc
   ```
 
-  2. Update the `apt` package index and install packages to allow `apt` to use a repository over HTTPS:
+2. Update the `apt` package index and install packages to allow `apt` to use a repository over HTTPS:
   ```bash
   $ sudo apt-get update
 
@@ -272,7 +272,7 @@ deactivate
         software-properties-common
   ```
 
-  3. Add Docker’s official GPG key:
+3. Add Docker’s official GPG key:
   ```bash
   $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
@@ -280,7 +280,7 @@ deactivate
   $ sudo apt-key fingerprint 0EBFCD88
   ```
 
-  4. Use the following command to set up the `stable` repository:
+4. Use the following command to set up the `stable` repository:
   ```bash
   $ sudo add-apt-repository \
   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
@@ -288,19 +288,19 @@ deactivate
   stable"
   ```
 
-  5. Update the `apt` package index, and install the latest version of Docker Engine and container:
+5. Update the `apt` package index, and install the latest version of Docker Engine and container:
   ```bash
   $ sudo apt-get update
   $ sudo apt-get install docker-ce docker-ce-cli containerd.io
   ```
 
-  6. Verify that Docker Engine is installed correctly by running the `hello-world` image:
+6. Verify that Docker Engine is installed correctly by running the `hello-world` image:
   ```bash
   $ sudo docker run hello-world
   ```
   This command downloads a test image and runs it in a container. When the container runs, it prints an informational message and exits.
   
-  [Source](https://docs.docker.com/engine/install/ubuntu/)
+[Source](https://docs.docker.com/engine/install/ubuntu/)
   
 </details>
 
