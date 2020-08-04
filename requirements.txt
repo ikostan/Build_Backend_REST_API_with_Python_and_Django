@@ -1,4 +1,2 @@
-coverage==5.2.1
 Django==2.2.13
-djangorestframework==3.9.4
-flake8==3.8.3
+djangorestframework==3.11.0
