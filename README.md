@@ -253,7 +253,7 @@ deactivate
 </details>
 
 <details>
-  <summary><b>Install Docker Engine on Ubuntu/b></summary>
+  <summary><b>Install Docker Engine on Ubuntu</b></summary>
   
   1. Older versions of Docker were called `docker`, `docker.io`, or `docker-engine`. If these are installed, uninstall them:
   ```bash
