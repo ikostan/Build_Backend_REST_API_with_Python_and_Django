@@ -4,9 +4,7 @@ MAINTAINER Egor Kostan
 ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /requirements.txt
-
 RUN pip install -r /requirements.txt
-RUN apk del .tmp-build-deps
 
 RUN mkdir /app
 WORKDIR /app
