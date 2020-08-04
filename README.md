@@ -305,9 +305,32 @@ deactivate
 </details>
 
 <details>
+  <summary><b>Install Docker Compose on Linux systems</b></summary>
+    
+  Step-by-step instructions are included below:
+  
+  1. Run this command to download the current stable release of Docker Compose:
+  ```bash
+  sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  ```
+  
+  2. Apply executable permissions to the binary:
+  ```bash
+  sudo chmod +x /usr/local/bin/docker-compose
+  ```
+
+  3. Test the installation:
+  ```bash
+  $ docker-compose --version
+  ```
+  
+[Source](https://docs.docker.com/compose/install/)
+</details>
+
+<details>
   <summary><b>error: RPC failed; curl 56 Recv failure: Connection was reset</b></summary>
 
-1. Open Git Bash<br/>
+1. Open Git Bash
 2. Run: "git config --global http.postBuffer 157286400" 
   
 [Source](https://stackoverflow.com/questions/36940425/gitlab-push-failed-error)
