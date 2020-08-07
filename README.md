@@ -127,6 +127,21 @@ virtualenv venv --python=python
 </details>
 
 <details>
+  <summary><b>Manjaro: Install Python3 pip</b></summary>
+  
+All python3 packages are prefixed python-, whereas python2 packages are prefixed python2-.
+
+The package is called python-pip. First check if it's already installed:
+
+```pacman -Qs python-pip```
+
+If there is no output after running the above command, that means that the package is not installed. In order to install it, run
+
+```sudo pacman -Syu python-pip```
+  
+</details>
+
+<details>
   <summary><b>Setting up Python3 virtual environment on Linx (Ubuntu) machine</b></summary>
 
 ### How to install virtualenv
