@@ -234,7 +234,7 @@ sudo pip3 install virtualenv
 virtualenv -p python3 venv
 
 # Step 5: Activate your new Python 3 environment. There are two ways to do this
-. env3/bin/activate # or source env3/bin/activate which does exactly the same thing
+. venv/bin/activate # or source env3/bin/activate which does exactly the same thing
 
 # you can make sure you are now working with Python 3
 python -- version
