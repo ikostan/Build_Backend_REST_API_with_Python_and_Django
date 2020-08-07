@@ -84,6 +84,20 @@ The original course content was created by [Mark Winterbottom](https://linkedin.
 <a id="tech_issues"></a>
 
 <details>
+  <summary><b>First-Time Git Setup</b></summary>
+  
+  The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
+
+    ```bash
+    git config --global user.name "John Doe"
+    git config --global user.email johndoe@example.com
+    ```
+  
+  [Source](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+  
+</details>
+
+<details>
   <summary><b>Changing the project interpreter in the PyCharm project settings</b></summary>
 
 1. In the **Settings/Preferences dialog** (Ctrl+Alt+S), select **Project <project name> | Project Interpreter**.
