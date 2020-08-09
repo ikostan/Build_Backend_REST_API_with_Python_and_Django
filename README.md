@@ -142,7 +142,7 @@ virtualenv venv --python=python
 </details>
 
 <details>
-  <summary><b>Manjaro: Install Python3 pip</b></summary>
+  <summary><b>Manjaro: Install Python3 pip, virtualenv</b></summary>
   
 All python3 packages are prefixed python-, whereas python2 packages are prefixed python2-.
 
@@ -153,7 +153,15 @@ The package is called python-pip. First check if it's already installed:
 If there is no output after running the above command, that means that the package is not installed. In order to install it, run
 
 ```sudo pacman -Syu python-pip```
-  
+
+In order to install `virtualenv` run:
+
+```pip install virtualenv```
+
+You also need to run ```sudo /usr/bin/easy_install virtualenv``` which puts it in `/usr/local/bin/`.
+
+[Source](https://stackoverflow.com/questions/31133050/virtualenv-command-not-found)
+
 </details>
 
 <details>
