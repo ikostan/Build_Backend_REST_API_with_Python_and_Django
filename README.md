@@ -158,7 +158,7 @@ In order to install `virtualenv` run:
 
 ```pip install virtualenv```
 
-You also need to run ```sudo /usr/bin/easy_install virtualenv``` which puts it in `/usr/local/bin/`.
+You also need to run `sudo /usr/bin/easy_install virtualenv` which puts it in `/usr/local/bin/`.
 
 [Source](https://stackoverflow.com/questions/31133050/virtualenv-command-not-found)
 
